@@ -2,7 +2,7 @@
  * @Author: Yang 
  * @Date: 2018-03-10 15:29:31 
  * @Last Modified by: Yang
- * @Last Modified time: 2018-03-13 22:31:27
+ * @Last Modified time: 2018-03-18 14:47:00
  */
 
 const path = require('path')
@@ -23,7 +23,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015', 'stage-0']
         }
       },
       {
