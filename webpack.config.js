@@ -2,7 +2,7 @@
  * @Author: Yang 
  * @Date: 2018-03-10 15:29:31 
  * @Last Modified by: Yang
- * @Last Modified time: 2018-03-18 14:47:00
+ * @Last Modified time: 2018-03-18 16:24:23
  */
 
 const path = require('path')
@@ -15,6 +15,12 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
     publicPath: '/'
+  },
+  resolve: {
+    alias: {
+      page: path.resolve(__dirname, 'src/page'),
+      components: path.resolve(__dirname, 'src/components')
+    }
   },
   module: {
     loaders: [
