@@ -2,7 +2,7 @@
  * @Author: Yang 
  * @Date: 2018-03-10 15:29:31 
  * @Last Modified by: Yang
- * @Last Modified time: 2018-03-18 16:24:23
+ * @Last Modified time: 2018-03-18 17:37:52
  */
 
 const path = require('path')
@@ -19,7 +19,8 @@ module.exports = {
   resolve: {
     alias: {
       page: path.resolve(__dirname, 'src/page'),
-      components: path.resolve(__dirname, 'src/components')
+      components: path.resolve(__dirname, 'src/components'),
+      config: path.resolve(__dirname, 'src/config')
     }
   },
   module: {
